@@ -1,13 +1,15 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { FC } from "react";
+import Steps from "@/components/Steps";
+import { FC, ReactNode } from "react";
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <MaxWidthWrapper className="flex-1 flex flex-col">
+      <Steps />
       {children}
     </MaxWidthWrapper>
   );

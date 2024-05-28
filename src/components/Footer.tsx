@@ -2,9 +2,7 @@ import { FC } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 
-interface FooterProps {}
-
-const Footer: FC<FooterProps> = ({}) => {
+const Footer: FC = () => {
   return (
     <footer className="bg-white h-20 relative">
       <MaxWidthWrapper>
